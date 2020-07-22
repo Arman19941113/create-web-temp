@@ -1,0 +1,23 @@
+{
+    "name": "create-web-temp",
+    "version": "1.0.0",
+    "description": "create-web-temp",
+    "keywords": ["webpack", "CLI"],
+    "repository": "https://github.com/Arman19941113/create-web-temp",
+    "homepage": "https://github.com/Arman19941113/create-web-temp#readme",
+    "bugs": {
+        "url": "https://github.com/Arman19941113/create-web-temp/issues",
+        "email": "td19941113@gmail.com"
+    },
+    "author": "Arman19941113",
+    "license": "MIT",
+    "bin": {
+        "create-web-temp": "./index.js"
+    },
+    "dependencies": {
+        "chalk": "4.0.0",
+        "commander": "5.1.0",
+        "fs-extra": "9.0.0",
+        "tmp": "0.2.1"
+    }
+}
