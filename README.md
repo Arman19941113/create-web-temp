@@ -1,31 +1,28 @@
 # Create Web App Template
 
-## Creating an App
+## Quick Start
 
-To create a new app, you may choose one of the following methods:
+Download template with yarn:
 
-### npx
-
-```sh
-npx create-web-temp my-app
-```
-
-### npm
-
-```sh
-npm init web-temp my-app
-```
-
-### yarn
-
-```sh
+```bash
 yarn create web-temp my-app
 ```
 
 ## Options
 
-### `-y, --yarn` use yarn instead of npm
+`-t, --web-temp <name>` specify template preset
 
-### `-i, --install` install packages when initializing
+`-i, --install` install packages when initializing
 
-### `-t, --web-temp <name>` specify web-template-name, [View templates support](https://github.com/Arman19941113/create-web-temp-packages)
+```bash
+yarn create web-temp my-app -t vue -i
+```
+
+Currently supported template presets include:
+
+- `vanilla`
+- `vue`
+- `vue-ts`
+- `vue-pro`
+- `react`
+- `react-ts`

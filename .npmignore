@@ -4,10 +4,4 @@
 .cache
 
 node_modules
-dist
-web
-
-package-lock.json
-yarn.lock
-
-.gitattributes
+web-dist
