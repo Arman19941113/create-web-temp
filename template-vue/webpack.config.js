@@ -24,6 +24,7 @@ module.exports = function (webpackEnv) {
       extensions: ['.js', '.json', '.vue'],
       alias: {
         '@': path.resolve('src'),
+        'vue$': 'vue/dist/vue.esm-bundler.js',
       },
     },
     devtool: envConfig.devtool,
