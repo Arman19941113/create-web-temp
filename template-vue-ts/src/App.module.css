@@ -1,0 +1,20 @@
+@import "~@/css/variable.css";
+
+:global #app {
+  color: $fontColor;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.button-text {
+  color: $mainColor;
+  cursor: pointer;
+}
+
+.overflow-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+

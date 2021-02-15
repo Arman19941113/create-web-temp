@@ -101,7 +101,17 @@ module.exports = function (webpackEnv) {
         test: /\.css$/,
         use: [
           isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: {
+                auto: /\.module\.css$/,
+                localIdentName: '[local]--[hash:base64:5]',
+                exportLocalsConvention: 'camelCase',
+              },
+            },
+          },
           {
             loader: 'postcss-loader',
             options: {

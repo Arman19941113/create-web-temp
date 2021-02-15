@@ -1,11 +1,11 @@
-import { ref, defineComponent } from 'vue'
-import './App.css'
+import { defineComponent } from 'vue'
+import './App.module.css'
+import HelloWorld from '@/components/HelloWorld'
 
 export default defineComponent({
   setup() {
-    const msg = ref('Hello world')
     return () => (
-      <h1>{ msg.value }</h1>
+      <HelloWorld />
     )
   },
 })
