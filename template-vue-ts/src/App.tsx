@@ -5,7 +5,7 @@ import HelloWorld from '@/components/HelloWorld'
 export default defineComponent({
   setup() {
     return () => (
-      <main class={ appStyles.mainWrapper }>
+      <main class={appStyles.mainWrapper}>
         <HelloWorld />
       </main>
     )

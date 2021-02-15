@@ -20,7 +20,7 @@ webpack(webpackConfig, (error, status) => {
     console.log(chalk.red(error.message))
   } else {
     const result = status.toJson()
-    console.log(`Compiled in ${ result.outputPath }`)
+    console.log(`Compiled in ${result.outputPath}`)
     result.assets.forEach(item => {
       console.log(formatBytes(item.size) + chalk.cyan(item.name))
     })

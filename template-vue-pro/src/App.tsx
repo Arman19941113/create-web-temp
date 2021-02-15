@@ -7,7 +7,7 @@ export default defineComponent({
     return () => (
       <>
         <Header />
-        <main class={ appStyles.mainWrapper }>
+        <main class={appStyles.mainWrapper}>
           <router-view />
         </main>
       </>

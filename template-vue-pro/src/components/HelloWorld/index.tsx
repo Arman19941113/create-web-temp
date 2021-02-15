@@ -15,7 +15,7 @@ export default defineComponent({
     })
 
     return () => (
-      <h1 ref={ root } class={ styles.helloWorld }>{ msg.value }</h1>
+      <h1 ref={root} class={styles.helloWorld}>{msg.value}</h1>
     )
   },
 })
