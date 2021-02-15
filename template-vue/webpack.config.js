@@ -82,7 +82,13 @@ module.exports = function (webpackEnv) {
         test: /\.css$/,
         use: [
           isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: false,
+              importLoaders: 1,
+            },
+          },
           {
             loader: 'postcss-loader',
             options: {
