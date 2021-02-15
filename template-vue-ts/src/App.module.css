@@ -2,8 +2,12 @@
 
 :global #app {
   color: $fontColor;
-  padding-top: 100px;
-  text-align: center;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .button-text {

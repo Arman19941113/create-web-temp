@@ -2,7 +2,11 @@
 @import "~@/css/variable.css";
 
 #app {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   color: $fontColor;
-  padding-top: 100px;
-  text-align: center;
+  .hello-world {
+    color: $mainColor;
+  }
 }
