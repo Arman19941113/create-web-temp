@@ -33,16 +33,21 @@ module.exports = function (webpackEnv) {
     },
     optimization: {
       emitOnErrors: true,
-      // chunkIds: 'named',
       splitChunks: {
         chunks: 'all',
-        // cacheGroups: {
-        //   demo: {
-        //     test: /element-ui/,
-        //     name: 'element-ui',
-        //     priority: 5,
-        //   },
-        // },
+        cacheGroups: {
+          vendors: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            priority: -10,
+            reuseExistingChunk: true,
+          },
+          default: {
+            minChunks: 2,
+            priority: -20,
+            reuseExistingChunk: true,
+          },
+        },
       },
     },
     plugins: [
