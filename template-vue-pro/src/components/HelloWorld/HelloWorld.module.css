@@ -1,0 +1,5 @@
+@import "~@/css/variable.css";
+
+.hello-world {
+  color: $mainColor;
+}
