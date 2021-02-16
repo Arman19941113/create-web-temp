@@ -14,12 +14,12 @@ function App() {
   }
 
   return (
-    <mian className={appStyles.mainWrapper}>
+    <main className={appStyles.mainWrapper}>
       <h1>You clicked {count} times</h1>
       <h1 className={appStyles.buttonText} onClick={handleClick}>
         Click me
       </h1>
-    </mian>
+    </main>
   )
 }
 
