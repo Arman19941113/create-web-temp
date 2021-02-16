@@ -69,7 +69,7 @@ module.exports = function (webpackEnv) {
           loader: 'babel-loader',
           options: {
             cacheDirectory: true,
-            presets: ['@babel/preset-env', '@babel/preset-react', 'react-app'],
+            presets: ['react-app'],
             plugins: ['react-hot-loader/babel'],
           },
         },
