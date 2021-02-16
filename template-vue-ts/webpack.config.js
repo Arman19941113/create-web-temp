@@ -88,6 +88,8 @@ module.exports = function (webpackEnv) {
         }, {
           loader: 'ts-loader',
           options: {
+            // open this option will lose static type checking but speed up compilation
+            transpileOnly: true,
             appendTsSuffixTo: [/\.vue$/],
           },
         }],

@@ -10,12 +10,7 @@
         "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
         "jsx": "preserve",
         "strict": true,
-        "sourceMap": true,
-        "resolveJsonModule": true,
-        "esModuleInterop": true,
-        "importHelpers": true,
         "noUnusedLocals": true,
-        "downlevelIteration": true,
         "allowSyntheticDefaultImports": true
     },
     "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
