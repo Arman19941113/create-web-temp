@@ -10,7 +10,7 @@ require('fs').rmdirSync('web-dist', { recursive: true })
 const chalk = require('chalk')
 const webpack = require('webpack')
 
-const webpackConfig = require('../webpack.config')('production')
+const webpackConfig = require('../build/webpack.config')('production')
 const { formatBytes } = require('./util')
 
 webpack(webpackConfig, (error, status) => {
