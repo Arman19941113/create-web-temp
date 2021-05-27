@@ -1,23 +1,23 @@
 @import "~@/css/variable.css";
 
 :global #root {
-  color: $fontColor;
+    color: $fontColor;
 }
 
 .main-wrapper {
-  text-align: center;
+    text-align: center;
 }
 
 .button-text {
-  color: $mainColor;
-  cursor: pointer;
-  user-select: none;
+    color: $mainColor;
+    cursor: pointer;
+    user-select: none;
 }
 
 .overflow-text {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 

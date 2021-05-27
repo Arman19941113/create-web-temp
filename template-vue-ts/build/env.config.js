@@ -1,4 +1,4 @@
-module.exports = function (webpackEnv) {
+module.exports = function(webpackEnv) {
   if (webpackEnv === 'development') {
     return {
       port: 7777,

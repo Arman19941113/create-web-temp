@@ -1,11 +1,11 @@
-import { defineComponent } from 'vue'
+import {defineComponent} from 'vue'
 import HelloWorld from '@/components/HelloWorld'
 
 export default defineComponent({
-  setup() {
-    return () => (
-      <HelloWorld />
-    )
-  },
+    setup() {
+        return () => (
+            <HelloWorld />
+        )
+    },
 })
 

@@ -7,7 +7,7 @@ const { VueLoaderPlugin } = require('vue-loader')
 
 const join = fragment => path.join(__dirname, '../', fragment)
 
-module.exports = function (webpackEnv) {
+module.exports = function(webpackEnv) {
   const isProduction = webpackEnv === 'production'
   const envConfig = require('./env.config')(webpackEnv)
 

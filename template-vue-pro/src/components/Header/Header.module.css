@@ -1,16 +1,16 @@
 @import "~@/css/variable.css";
 
 .header-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  font-size: 24px;
-  font-weight: bold;
-  :global a {
-    margin: 0 40px;
-    &:hover, &.router-link-active {
-      color: $mainColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    :global a {
+        margin: 0 40px;
+        &:hover, &.router-link-active {
+            color: $mainColor;
+        }
     }
-  }
 }

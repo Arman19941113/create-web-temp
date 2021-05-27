@@ -52,7 +52,7 @@ async function createApp() {
         type: 'confirm',
         name: 'yes',
         initial: 'Y',
-        message: `Empty ${ appName } directory and continue?`,
+        message: `Empty ${appName} directory and continue?`,
       })
       if (yes) {
         fs.emptyDirSync(appPath)
@@ -75,7 +75,7 @@ async function createApp() {
   }
 
   // 4. copy template
-  const templateDir = path.join(__dirname, `template-${ templateName }`)
+  const templateDir = path.join(__dirname, `template-${templateName}`)
   // copySync's performance is not good
   // fs.copySync(templateDir, appPath)
   const files = fs.readdirSync(templateDir)
@@ -104,7 +104,7 @@ async function createApp() {
   }
 
   console.log()
-  console.log(`Success! Template has been created in ${ chalk.green(appPath) }`)
+  console.log(`Success! Template has been created in ${chalk.green(appPath)}`)
   console.log()
   console.log('Inside that directory, you can run several commands:')
   console.log(chalk.cyan(`    yarn start`))
@@ -115,7 +115,7 @@ async function createApp() {
   console.log('        To preview the app built in production.')
   console.log()
   console.log('We suggest that you begin by typing:')
-  console.log(chalk.cyan(`    cd ${ appName }`))
+  console.log(chalk.cyan(`    cd ${appName}`))
   !isInstall && console.log(chalk.cyan(`    yarn install`))
   console.log(chalk.cyan(`    yarn start`))
   console.log()

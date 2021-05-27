@@ -1,17 +1,29 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-            "@/*": ["src/*"]
-        },
-        "target": "esnext",
-        "module": "esnext",
-        "moduleResolution": "node",
-        "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
-        "jsx": "preserve",
-        "strict": true,
-        "noUnusedLocals": true,
-        "allowSyntheticDefaultImports": true
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
     },
-    "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "jsx": "preserve",
+    "strict": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ]
 }

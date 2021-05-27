@@ -1,27 +1,27 @@
 {
-    "name": "create-web-temp",
-    "version": "2.0.5",
-    "description": "create-web-temp",
-    "keywords": [
-        "webpack",
-        "CLI"
-    ],
-    "repository": "https://github.com/Arman19941113/create-web-temp",
-    "homepage": "https://github.com/Arman19941113/create-web-temp#readme",
-    "bugs": {
-        "url": "https://github.com/Arman19941113/create-web-temp/issues",
-        "email": "td19941113@gmail.com"
-    },
-    "author": "Arman19941113",
-    "license": "MIT",
-    "bin": {
-        "create-web-temp": "./index.js"
-    },
-    "dependencies": {
-        "chalk": "^4.1.0",
-        "commander": "^7.0.0",
-        "enquirer": "^2.3.6",
-        "fs-extra": "^9.1.0",
-        "strip-ansi": "^6.0.0"
-    }
+  "name": "create-web-temp",
+  "version": "2.0.5",
+  "description": "create-web-temp",
+  "keywords": [
+    "webpack",
+    "CLI"
+  ],
+  "repository": "https://github.com/Arman19941113/create-web-temp",
+  "homepage": "https://github.com/Arman19941113/create-web-temp#readme",
+  "bugs": {
+    "url": "https://github.com/Arman19941113/create-web-temp/issues",
+    "email": "td19941113@gmail.com"
+  },
+  "author": "Arman19941113",
+  "license": "MIT",
+  "bin": {
+    "create-web-temp": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.0.0",
+    "enquirer": "^2.3.6",
+    "fs-extra": "^9.1.0",
+    "strip-ansi": "^6.0.0"
+  }
 }

@@ -1,24 +1,24 @@
 @import "~@/css/variable.css";
 
 :global #app {
-  color: $fontColor;
+    color: $fontColor;
 }
 
 .main-wrapper {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .button-text {
-  color: $mainColor;
-  cursor: pointer;
+    color: $mainColor;
+    cursor: pointer;
 }
 
 .overflow-text {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
