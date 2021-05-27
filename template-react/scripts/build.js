@@ -5,7 +5,9 @@ process.on('unhandledRejection', err => {
 
 console.log('✨ Start building...')
 
-require('fs').rmdirSync('web-dist', { recursive: true })
+if (require('fs').existsSync('web-dist')) {
+  require('fs').rmdirSync('web-dist', { recursive: true })
+}
 
 const chalk = require('chalk')
 const webpack = require('webpack')
