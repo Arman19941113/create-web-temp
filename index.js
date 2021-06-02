@@ -10,9 +10,10 @@ const stripAnsi = require('strip-ansi')
 const fs = require('fs-extra')
 const { prompt } = require('enquirer')
 
-const ORIGIN_TEMPLATES = ['vanilla', 'vue', 'vue-ts', 'vue-pro', 'react', 'react-ts']
+const ORIGIN_TEMPLATES = ['vanilla', 'vue-2', 'vue', 'vue-ts', 'vue-pro', 'react', 'react-ts']
 const COLOR_TEMPLATES = [
   chalk.yellow('vanilla'),
+  chalk.green('vue-2'),
   chalk.green('vue'),
   chalk.green('vue-ts'),
   chalk.green('vue-pro'),
@@ -23,7 +24,7 @@ const COLOR_TEMPLATES = [
 const cwd = process.cwd()
 const program = new commander.Command('create-web-temp')
   .arguments('[name]')
-  .option('-t, --web-temp <name>', 'specify web-template-name')
+  .option('-t, --template <name>', 'specify web-template-name')
   .option('-i, --install', 'install packages when initializing')
   .parse(process.argv)
 const programOptions = program.opts()
@@ -86,21 +87,21 @@ async function createApp() {
   }
   const pkg = require(path.join(templateDir, `package.json`))
   pkg.name = templateName
-  fs.writeFileSync(path.join(appPath, 'package.json'), JSON.stringify(pkg, null, 4) + os.EOL)
+  fs.writeFileSync(path.join(appPath, 'package.json'), JSON.stringify(pkg, null, 2) + os.EOL)
   fs.moveSync(path.join(appPath, 'gitignore'), path.join(appPath, '.gitignore'))
 
   // 5. init git
   process.chdir(appPath)
   execSync('git init', { stdio: 'ignore' })
-  execSync('git add -A', { stdio: 'ignore' })
-  execSync('git commit -m "Initialize project with create-web-temp"', { stdio: 'ignore' })
+  execSync('git add --all', { stdio: 'ignore' })
+  execSync('git commit --message "Initialize project with create-web-temp"', { stdio: 'ignore' })
 
   // 6. Install modules
   const isInstall = programOptions.install
   if (isInstall) {
     console.log()
     console.log('Installing packages. This might take a couple of minutes.')
-    execSync('yarn install -s', { stdio: 'inherit' })
+    execSync('yarn install --silent', { stdio: 'inherit' })
   }
 
   console.log()
